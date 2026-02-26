@@ -1,7 +1,7 @@
 {
   "telegram": {
-    "bot_token": "8515933843:AAH4fyk442_d-w40bdvcLpb2SKrvjzm2kXk",
-    "chat_id": "1250352771"
+    "bot_token": "PASTE_YOUR_BOT_TOKEN",
+    "chat_id": "PASTE_YOUR_ID_TOKEN"
   },
   
   "scraping": {
@@ -64,4 +64,5 @@
     "scrape_interval_hours": 24,
     "daily_report_time": "08:00"
   }
+
 }
