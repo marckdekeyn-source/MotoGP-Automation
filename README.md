@@ -334,16 +334,6 @@ class RateLimiter:
         self.window = window
 ```
 
-### ✅ Access Control
-
-**Whitelist/Blacklist:**
-```json
-{
-  "allowed_chat_ids": [1250352771, 9876543210],
-  "admin_chat_ids": [1250352771]
-}
-```
-
 **Features:**
 - User tracking
 - Audit trail
@@ -399,7 +389,7 @@ certifi>=2023.7.22            # SSL certificates
 
 ### Step 1: Clone/Download Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/marckdekeyn-source/MotoGP-Automation
 cd motogp-bot
 ```
 
@@ -428,7 +418,7 @@ pip install -r requirements.txt --break-system-packages
 1. Search for **@userinfobot** in Telegram
 2. Send `/start`
 3. Bot will reply with your ID
-4. **Copy the numeric ID** (e.g., `1250352771`)
+4. **Copy the numeric ID** (e.g., `12345678`)
 
 ### Step 5: Configure Bot
 
@@ -437,8 +427,8 @@ Edit `config.json`:
 ```json
 {
   "telegram": {
-    "bot_token": "1234567890:ABCdefGHIjklMNOpqrSTUvwxYZ",
-    "chat_id": "1250352771"
+    "bot_token": "123456790:ABCdefGHIjklMNOpqrSTUvwxYZ",
+    "chat_id": "12345678"
   },
   "chrome": {
     "force_version": 145,
@@ -1096,13 +1086,6 @@ motogp-bot/
 │
 ├── ⚙️ config.json               # Configuration file (EDIT THIS!)
 ├── 📋 requirements.txt          # Python dependencies
-│
-├── 📚 README.md                 # This file
-├── 🚀 QUICKSTART.md             # 5-minute setup guide
-│
-├── 🔒 .env.example              # Environment variables template
-├── 🚫 .gitignore                # Git ignore rules
-│
 ├── 📊 data/                     # Auto-created on first run
 │   ├── current.json             # Latest scraped data
 │   └── previous.json            # Previous data for comparison
